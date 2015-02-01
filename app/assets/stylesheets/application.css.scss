@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require jquery-ui
+ */
+
+.head {
+  margin: 160px 0px 160px 0px;
+  text-align: center;
+  h1 {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 72px;
+    display: inline;
+  }
+  svg {
+    margin-right: -3%;
+    vertical-align: top;
+  }
+}
+
+.popover{
+    max-width: 90%;
+}
+
+.player-card {
+  background-color: #E8423E;
+  margin-bottom: 60px;
+  padding: 40px;
+  font-size: 24px;
+  color: #FFF;
+  padding: 45% 15px 15px;
+  border: solid #FFF;
+}
+
+.dollars {
+  color: #E8423E;
+  margin-top: -90px;
+  margin-bottom: 30px;
+  h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.why {
+  margin: 0px;
+  margin-bottom: 60px;
+  h2 {
+    font-family: Impact, Charcoal, sans-serif;
+  }
+}
+
+table .edit {
+  text-align: center;
+  max-width: 80px;
+}
+
+.money, .why {
+  padding: 0% 10%;
+}
+
+.contact-info {
+  text-align: center;
+  font-size: 48px;
+  padding: 60px;
+  background: -webkit-linear-gradient(left, #484E60, #99C2E6); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #484E60, #99C2E6); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #484E60, #99C2E6); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #484E60, #99C2E6); /* Standard syntax */
+  a, a:hover, a:visited {
+    color: #FFF;
+    text-decoration: none;
+    background-color: inherit;
+    padding: 0px 16px;
+   }
+}

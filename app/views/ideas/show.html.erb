@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Revenue:</strong>
+  <%= @idea.revenue %>
+</p>
+
+<p>
+  <strong>Costs:</strong>
+  <%= @idea.costs %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @idea.description %>
+</p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @idea.player_id %>
+</p>
+
+<%= link_to 'Edit', edit_idea_path(@idea) %> |
+<%= link_to 'Back', ideas_path %>

@@ -1,0 +1,33 @@
+<div class="players">
+  <h1>Listing players</h1>
+
+  <table class='table table-striped table-bordered'>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @players.each do |player| %>
+        <tr>
+          <td><%= player.name %></td>
+          <td><%= player.email %></td>
+          <td class='edit'><%= link_to 'Show', player %> | 
+              <%= link_to 'Edit', edit_player_path(player) %> |
+              <%= link_to 'Delete', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Player', new_player_path %>
+  <br>
+  <br>
+  <%= link_to 'Score Board', root_path %>
+
+</div>

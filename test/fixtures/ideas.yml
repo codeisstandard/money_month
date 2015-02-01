@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  revenue: 1.5
+  costs: 1.5
+  description: MyText
+  player_id: 1
+
+two:
+  revenue: 1.5
+  costs: 1.5
+  description: MyText
+  player_id: 1
