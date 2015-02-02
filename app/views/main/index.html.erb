@@ -24,7 +24,7 @@
         <div class="dollars">
           <h3>DIP: $<%= Money.us_dollar dip(p) %></h3>
         </div>
-        <a class="contestant" href="<% p.ideas.first.link %>" taget='_blank' style="background: url(<%= p.ideas.first.image_url %>);background-size: cover;background-position: center;">
+        <a class="contestant" href='<%= p.ideas.first.link %>' target='_blank' style="background: url(<%= p.ideas.first.image_url %>);background-size: cover;background-position: center;">
           <span class="icon icon-link"></span>
           <h2>
             <%= p.name %>,
