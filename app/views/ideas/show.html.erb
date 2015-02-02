@@ -1,24 +1,36 @@
-<p id="notice"><%= notice %></p>
+<div class="idea-show col-sm-10 col-sm-offset-2">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Revenue:</strong>
-  <%= @idea.revenue %>
-</p>
+  <p>
+    <strong>Name:</strong>
+    <%= @idea.name %>
+  </p>
 
-<p>
-  <strong>Costs:</strong>
-  <%= @idea.costs %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @idea.description %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @idea.description %>
-</p>
+  <p>
+    <strong>Player:</strong>
+    <%= @idea.player.name %>
+  </p>
 
-<p>
-  <strong>Player:</strong>
-  <%= @idea.player_id %>
-</p>
+  <p>
+    <strong>Revenue:</strong>
+    <%= @idea.revenue %>
+  </p>
 
-<%= link_to 'Edit', edit_idea_path(@idea) %> |
-<%= link_to 'Back', ideas_path %>
+  <p>
+    <strong>Costs:</strong>
+    <%= @idea.costs %>
+  </p>
+
+  <p>
+    <strong>Image URL:</strong>
+    <%= @idea.image_url %>
+  </p>
+
+  <%= link_to 'Edit', edit_idea_path(@idea) %> |
+  <%= link_to 'Back', ideas_path %>
+</div>

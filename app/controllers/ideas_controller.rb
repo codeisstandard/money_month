@@ -1,5 +1,6 @@
 class IdeasController < ApplicationController
   before_action :set_idea, only: [:show, :edit, :update, :destroy]
+  layout 'admin'
 
   # GET /ideas
   # GET /ideas.json
@@ -70,6 +71,6 @@ class IdeasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def idea_params
-      params.require(:idea).permit(:revenue, :costs, :description, :player_id)
+      params.require(:idea).permit(:revenue, :costs, :description, :player_id, :name, :image_url)
     end
 end
