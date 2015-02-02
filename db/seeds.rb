@@ -11,6 +11,9 @@
 #   Idea.create(description: 'Super awesome amazing idea here.', player_id: p.id)
 # end
 
+Player.destroy_all
+Idea.destroy_all
+
 Player.create(name: 'Abdul', email: 'abdul@stanardco.de')
 Player.create(name: 'Ace', email: 'ace@standardco.de')
 Player.create(name: 'Jenn', email: 'jenn@weand.co')
@@ -21,10 +24,10 @@ Player.create(name: 'TJ', email: 'tj@standardco.de')
 Player.create(name: 'MJ', email: 'mj@standardco.de')
 
 Player.all.each_with_index do |p, i|
- Idea.create(
-   revenue: 0,
-   costs: 0, 
-   description: 'Super awesome amazing idea here',
-   player_id: p.id
-   )
+  Idea.create(
+    revenue: 0,
+    costs: 0, 
+    description: 'Super awesome amazing idea here',
+    player_id: p.id
+    )
 end
