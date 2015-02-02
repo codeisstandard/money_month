@@ -14,7 +14,7 @@
  *= require_self
  *= require jquery-ui
  */
- 
+
 body {
   font-family: "expo-serif-pro";
   font-size: 16px;
@@ -99,6 +99,7 @@ footer {
 }
 
 .contestant {
+  display: block;
   padding: 45% 15px 15px;
   background: #E8423E;
   margin: 0 0 30px;
@@ -113,6 +114,17 @@ footer {
   h2 {
     margin-bottom: 5px;
     color: #fff;
+    small {
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+  .icon {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
   }
   p {
     color: #fff;
@@ -125,9 +137,10 @@ footer {
     margin-top: 15px;
   }
   &:hover {
+    text-decoration: none;
     z-index: 99;
     -webkit-transition-delay: 500ms; /* Safari */
-      transition-delay: 500ms;
+    transition-delay: 500ms;
     -moz-transform: scale(1.05) translateX(0px) translateY(-50px);
     -webkit-transform: scale(1.05) translateX(0px) translateY(-50px);
     -o-transform: scale(1.05) translateX(0px) translateY(-50px);
