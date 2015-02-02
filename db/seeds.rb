@@ -20,7 +20,7 @@ Player.create(name: 'Scott', email: 'scott@weand.co')
 Player.create(name: 'TJ', email: 'tj@standardco.de')
 Player.create(name: 'MJ', email: 'mj@standardco.de')
 
-Player.each_with_index do |p, i|
+Player.all.each_with_index do |p, i|
   Idea.create(
     revenue: 0,
     costs: 0, 
