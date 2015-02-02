@@ -5,6 +5,13 @@ module IdeasHelper
   end
 
   def players 
-    {'Abdul'=> 1, 'Ace'=> 2, 'Jenn'=> 3, 'Jared'=> 4, 'Jonathan'=> 5, 'MJ'=> 6, 'Scott'=> 7, 'TJ'=> 8}
+    {'Abdul'=> Player.find_by(name: 'Abdul').id, 
+     'Ace'=> Player.find_by(name: 'Ace').id, 
+     'Jenn'=> Player.find_by(name: 'Jenn').id, 
+     'Jared'=> Player.find_by(name: 'Jared').id, 
+     'Jonathan'=> Player.find_by(name: 'Jonathan').id, 
+     'MJ'=> Player.find_by(name: 'MJ').id, 
+     'Scott'=> Player.find_by(name: 'Scott').id, 
+     'TJ'=> Player.find_by(name: 'TJ').id}
   end
 end
