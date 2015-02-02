@@ -4,7 +4,7 @@ class IdeasController < ApplicationController
   # GET /ideas
   # GET /ideas.json
   def index
-    @ideas = Idea.all
+    @ideas = Idea.all.order('player_id asc')
   end
 
   # GET /ideas/1
@@ -25,7 +25,6 @@ class IdeasController < ApplicationController
   # POST /ideas.json
   def create
     @idea = Idea.new(idea_params)
-
     respond_to do |format|
       if @idea.save
         format.html { redirect_to @idea, notice: 'Idea was successfully created.' }
@@ -65,6 +64,8 @@ class IdeasController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_idea
       @idea = Idea.find(params[:id])
+      @idea.costs = 0 if @idea.costs == nil
+      @idea.revenue = 0 if @idea.costs == nil
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
