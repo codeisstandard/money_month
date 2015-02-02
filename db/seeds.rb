@@ -32,3 +32,8 @@
 #     player_id: p.id
 #     )
 # end
+
+Idea.all.each do |i|
+  i.image_url = 'https://www.evernote.com/shard/s408/sh/4deb1fac-0d7b-4a4a-a1bf-160a98b83896/ed61d083677c041b275a611052eab775/deep/0/Standard-Code.png'
+  i.save
+end

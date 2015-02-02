@@ -6,6 +6,7 @@
     <thead>
       <tr>
         <th>Mastermind</th>
+        <th>Link</th>
         <th>Revenue</th>
         <th>Costs</th>
         <th>DIP</th>
@@ -17,6 +18,7 @@
       <% @ideas.each do |idea| %>
         <tr>
           <td><%= idea.player.name %></td>
+          <td><%= idea.link %></td>
           <td><%= Money.us_dollar(idea.revenue).format %></td>
           <td><%= Money.us_dollar(idea.costs).format %></td>
           <td><%= Money.us_dollar(idea.revenue - idea.costs).format %></td>
