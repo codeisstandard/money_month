@@ -24,7 +24,7 @@ Player.each_with_index do |p, i|
   Idea.create(
     revenue: 0,
     costs: 0, 
-    description: 'Super awesoem amazing idea here'
+    description: 'Super awesoem amazing idea here',
     player_id: p.id
     )
 end
