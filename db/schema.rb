@@ -11,14 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150202202131) do
+ActiveRecord::Schema.define(version: 20150203203541) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "ideas", force: true do |t|
-    t.float    "revenue"
-    t.float    "costs"
     t.text     "description"
     t.integer  "player_id"
     t.datetime "created_at"
@@ -26,6 +24,9 @@ ActiveRecord::Schema.define(version: 20150202202131) do
     t.string   "name"
     t.string   "image_url"
     t.string   "link"
+    t.decimal  "costs",       precision: 8, scale: 2
+    t.decimal  "revenue",     precision: 8, scale: 2
+    t.string   "dip"
   end
 
   create_table "players", force: true do |t|

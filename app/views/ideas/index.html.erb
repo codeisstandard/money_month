@@ -19,9 +19,9 @@
         <tr>
           <td><%= idea.player.name %></td>
           <td><%= idea.link %></td>
-          <td><%= Money.us_dollar(idea.revenue).format %></td>
-          <td><%= Money.us_dollar(idea.costs).format %></td>
-          <td><%= Money.us_dollar(idea.revenue - idea.costs).format %></td>
+          <td><%= idea.revenue %></td>
+          <td><%= idea.costs %></td>
+          <td><%= idea.dip %></td>
           <td class='edit'><%= link_to 'Show', idea %> |
               <%= link_to 'Edit', edit_idea_path(idea) %> |
               <%= link_to 'Delete', idea, method: :delete, data: { confirm: 'Are you sure?' } %>

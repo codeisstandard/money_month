@@ -19,18 +19,18 @@
 
 <div class="money">
   <div class="row">
-    <% Player.all.order('name asc').each do |p| %>
+    <% @ideas.each do |i| %>
       <div class="col-sm-6">
         <div class="dollars">
-          <h3>DIP: $<%= Money.us_dollar dip(p) %></h3>
+          <h3>DIP: $<%= i.dip %></h3>
         </div>
-        <a class="contestant" href='<%= p.ideas.first.link %>' target='_blank' style="background: url(<%= p.ideas.first.image_url %>);background-size: cover;background-position: center;">
+        <a class="contestant" href='<%= i.link %>' target='_blank' style="background: url(<%= i.image_url %>);background-size: cover;background-position: center;">
           <span class="icon icon-link"></span>
           <h2>
-            <%= p.name %>,
-            <small><%= p.ideas.first.name %></small>
+            <%= i.player.name %>,
+            <small><%= i.name %></small>
           </h2>
-          <p><%= p.ideas.first.description %></p>
+          <p><%= i.description %></p>
         </a>
       </div>
     <% end %>

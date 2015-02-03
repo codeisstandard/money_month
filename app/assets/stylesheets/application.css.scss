@@ -27,6 +27,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
+a {
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+  }
+}
+
 .top, footer {
   background: -moz-linear-gradient(-45deg, rgba(26,34,56,0.8) 0%, rgba(26,34,56,0.8) 19%, rgba(132,186,233,0.8) 100%);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(26,34,56,0.8)), color-stop(19%, rgba(26,34,56,0.8)), color-stop(100%, rgba(132,186,233,0.8)));
