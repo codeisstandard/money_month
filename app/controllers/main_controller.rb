@@ -1,5 +1,5 @@
 class MainController < ApplicationController
   def index
-    @ideas = Idea.all.order('dip asc')
+    @ideas = Idea.all.order('dip desc')
   end
 end

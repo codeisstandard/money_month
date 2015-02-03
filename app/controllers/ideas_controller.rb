@@ -5,7 +5,7 @@ class IdeasController < ApplicationController
   # GET /ideas
   # GET /ideas.json
   def index
-    @ideas = Idea.all.order('dip asc')
+    @ideas = Idea.all.order('dip desc')
   end
 
   # GET /ideas/1

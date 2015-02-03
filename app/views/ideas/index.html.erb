@@ -6,6 +6,7 @@
     <thead>
       <tr>
         <th>Mastermind</th>
+        <th>Name</th>
         <th>Link</th>
         <th>Revenue</th>
         <th>Costs</th>
@@ -18,10 +19,11 @@
       <% @ideas.each do |idea| %>
         <tr>
           <td><%= idea.player.name %></td>
+          <td><%= idea.name %></td>
           <td><%= idea.link %></td>
           <td><%= idea.revenue %></td>
           <td><%= idea.costs %></td>
-          <td><%= idea.dip %></td>
+          <td><%= idea.formatted_dip %></td>
           <td class='edit'><%= link_to 'Show', idea %> |
               <%= link_to 'Edit', edit_idea_path(idea) %> |
               <%= link_to 'Delete', idea, method: :delete, data: { confirm: 'Are you sure?' } %>
