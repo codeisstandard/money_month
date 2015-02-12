@@ -2,9 +2,9 @@
   <h1 class="money" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="
   <h2>How to play $$$</h2>
   <p>$$$ is a fun competition between the members of the Standard Code team. Scroll to the bottom to learn more.</p>
-  <p>1. Dollars in pocket (DIP) wins (Revenue - Costs = DIP).</p>
+  <p>1. Person who brings in the most money wins.</p>
   <p>2. No breaking the law.</p>
-  <p>3. Bartering skills is ok, but unreciprocated bartering = cost.</p>
+  <p>3. Bartering skills is ok</p>
   <p>4. No work can be done before Feb 1.</p>
   <p>5. No dollars can be counted after Feb 28.</p>
   <p>6. Bending the rules is ok. Cheating is not.</p>
@@ -22,7 +22,7 @@
     <% @ideas.each do |i| %>
       <div class="col-sm-6">
         <div class="dollars">
-          <h3>DIP: $<%= i.formatted_dip %></h3>
+          <%= i.description %>
         </div>
         <a class="contestant" href='<%= i.link %>' target='_blank' style="background: url(<%= i.image_url %>);background-size: cover;background-position: center;">
           <span class="icon icon-link"></span>
@@ -30,7 +30,6 @@
             <%= i.player.name %>,
             <small><%= i.name %></small>
           </h2>
-          <p><%= i.description %></p>
         </a>
       </div>
     <% end %>

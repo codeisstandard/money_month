@@ -98,6 +98,11 @@ footer {
     position: absolute;
     bottom: 20px;
     width: 100%;
+    padding: 10px 25px 10px 10px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     h3 {
       text-align: center;
     }
